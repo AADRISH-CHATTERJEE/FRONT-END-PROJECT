@@ -1,0 +1,156 @@
+#navlist{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    width: 100%;
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-delay: 0.4s;
+    
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    /* background-color: #A9C9FF;  */
+    /* background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);  */
+    background-color: #3EECAC;
+background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+
+
+}
+nav{
+    width: 100%;
+    padding-right: 2rem;
+}
+#navlogo{
+    font-size: 3rem;
+    color: rgb(171, 0, 145);
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navcontainer{
+    width: 100%;
+    background-color: #00DBDE; 
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%); 
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+a{
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 25px;
+}
+#navitems{
+    display: flex;
+    gap: 40px;
+    
+}
+.footer{
+    width: 100%;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    text-align: center;
+    min-height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    font-size: 24px;
+    display: flex;
+    font-family: fantasy;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+@keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+.content{
+    width: 70%;
+    margin: auto;
+    /* background-color: #3EECAC; */
+    /* background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%); */
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 4rem;
+    box-shadow: 0px 0px 30px black;
+
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightbox img{
+    height: 370px;
+    width: 400px;
+    border-radius: 30px;
+    transition: all 0.5s 0s linear ;
+}
+.leftbox{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+.leftbox h2{
+    font-size: 3rem;
+}
+.leftbox h3{
+    font-size: 2rem;
+}
+.ingbox{
+    font-size: 1.5rem;
+}
+.recipebox{
+    font-size: 1.5rem;
+}
+.rightbox:hover{
+    transform: scale(1.15);
+}
+.rightbox{
+    position: relative;
+    transition: all 0.3s 0s linear;
+}
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.458);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s 0s linear;
+
+}
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+.rightbox .overlay span{
+    font-size: 1.2rem;
+    color: aliceblue;
+}
